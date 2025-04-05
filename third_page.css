@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #FBF5D2;
+    font-family: AkayaTelivigala;
+}
+
+.text{ 
+    color: #FBF5D2;
+    font-size:25px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+}
+
+.header_dev{
+    font-family: 'Italianno', cursive;
+    font-size: 30px;
+    color: #FBF5D2;
+}
+.home{
+    font-family: 'AkayaTelivigala';
+    font-size:30px;
+    color: #FBF5D2;
+}
