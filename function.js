@@ -22,6 +22,3 @@ const card_contain = new Map([
     [20,["judgement.jpeg","Judgement", "Reflection, awakening, redemption, self-evaluation."]],
     [21,["theworld.jpeg","The World", "Completion, wholeness, fulfillment, harmony."]]
 ]);
-
-let a = Math.floor(Math.random()*22);
-console.log(a);

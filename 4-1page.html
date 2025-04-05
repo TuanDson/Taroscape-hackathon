@@ -25,15 +25,73 @@
             <h3> Combination of Names of 3 cards here</h3>
         </div>
         <div class="cardPick">
-            <img src="TarotCard.png">
-            <img src="TarotCard.png">
-            <img src="TarotCard.png">
+            <img id="card1" src="TarotCard.png">
+            <img id= "card2" src="TarotCard.png">
+            <img id= "card3" src="TarotCard.png">
         </div>
         <div class="result">
             <h4 style="background-color: #571463">interpretation</h4>
+            <p id="meaning1"></p>
+            <p id="meaning2"></p>
+            <p id="meaning3"></p>
         </div>
         <div class="returnHome">
             <a href="index.html">Home</a>
         </div>
 
+        <script>
+            const card_contain = new Map([
+            [0,["thefool.jpeg","The Fool","New beginnings, adventure, spontaneity, taking a leap of faith."]],
+            [1,["themagician.jpeg","The Magician", " Manifestation, creativity, skill, resourcefulness."]],
+            [2,["thehighpriestess.jpeg","The High Priestess","Intuition, wisdom, inner knowledge, mystery."]],
+            [3,["theempress.jpeg","The Empress", "Fertility, nurturing, abundance, creativity."]],
+            [4,["theemperor.jpeg","The Emperor"," Authority, structure, stability, leadership."]],
+            [5,["thehierophant.jpeg","The Hierophant", "Tradition, spirituality, guidance, learning."]],
+            [6,["TheLovers.jpg","The Lovers","Love, relationships, harmony, choices."]],
+            [7, ["thechariot.jpeg","The Chariot","Determination, willpower, success through control."]],
+            [8,["thestrength.jpeg","The Strength", "Courage, patience, inner strength, compassion."]],
+            [9,["thehermit.jpeg","The Hermit","Solitude, introspection, inner guidance, wisdom."]],
+            [10,["wheeloffortune.jpeg","Wheel of Fortune", "Luck, destiny, cycles, turning points."]],
+            [11,["justice.jpeg","Justice", "Fairness, balance, truth, legal matters."]],
+            [12,["thehangedman.jpeg","The Hanged Man","Surrender, letting go, seeing things from a different perspective."]],
+            [13,["death.jpeg","Death","Transformation, endings, new beginnings, change."]],
+            [14,["temperance.jpeg","Temperance","Balance, moderation, patience, harmony."]],
+            [15,["thedevil.jpeg","The Devil","emptation, materialism, addiction, self-imposed bondage."]],
+            [16,["thetower.jpeg","The Tower", "Sudden upheaval, destruction, awakening, revelation."]],
+            [17,["thestar.jpeg","The Star", "Hope, inspiration, spiritual guidance, healing."]],
+            [18,["themoon.jpeg","The Moon", "Illusion, subconscious, intuition, confusion."]],
+            [19,["thesun.jpeg","The Sun","Joy, success, positivity, vitality."]],
+            [20,["judgement.jpeg","Judgement", "Reflection, awakening, redemption, self-evaluation."]],
+            [21,["theworld.jpeg","The World", "Completion, wholeness, fulfillment, harmony."]]
+            ]);
+            let a, b, c;
+            while (true){
+                a = Math.floor(Math.random()*22);
+                b = Math.floor(Math.random()*22);
+                c = Math.floor(Math.random()*22);
+                if (a!=b && b!=c && a!=c){
+                    break;
+                }
+            }
+            const img1 = card_contain.get(a)[0];
+            const img2 = card_contain.get(b)[0];
+            const img3 = card_contain.get(c)[0];
+
+            const meaning1= card_contain.get(a)[2];
+            const meaning2= card_contain.get(b)[2];
+            const meaning3= card_contain.get(c)[2];
+    
+            document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("card1").src = img1;
+            document.getElementById("card2").src = img2;
+            document.getElementById("card3").src = img3;
+            });
+
+            document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("meaning1").textContent = meaning1;
+            document.getElementById("meaning2").textContent = meaning2;
+            document.getElementById("meaning3").textContent = meaning3;
+            });
+        </script>
     </div>
+</body>
