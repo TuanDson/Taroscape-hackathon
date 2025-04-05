@@ -1,0 +1,45 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url("/Users/jieyiwang/Desktop/Taroscape-hackathon/a6aede1ed9791fcb87b854a6c5577087.png");
+}
+
+.header{
+    height: 100px;
+    font-family: 'Italianno', cursive;
+    font-size: 30px;
+    color: #FBF5D2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.paraHeading{
+    font-family: AkayaTelivigala;
+    font-size:25px;
+    color: #FBF5D2;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    /* height: 100vh; 占满整个视口高度 */
+    align-items: center;   
+}
+
+#h1tag{
+    margin: 0;
+}
+
+.functionList{
+    font-family: AkayaTelivigala;
+    color: #FBF5D2;
+    font-size:40px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
