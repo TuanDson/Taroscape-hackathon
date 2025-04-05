@@ -1,29 +1,24 @@
 *{
     margin: 0px;
-    padding:0px; 
+    padding: 0px;
 }
 
 a{
     text-decoration: none;
 }
 
-.main{
-    background-image: url("image.png");
-    color: #fbf5d2;
+body{
+    background-image: url("a6aede1ed9791fcb87b854a6c5577087.png");
 }
 
 .header{
-    height: 200px;
+    height: 100px;
+    font-family: 'Italianno', cursive;
+    font-size: 30px;
+    color: #FBF5D2;
     display: flex;
     justify-content: space-around;
-    line-height: 90px;
-    margin: 0px;
     align-items: center;
-}
-
-.header_dev h2{
-    font-family: 'Italianno',cursive;
-    font-size: 100px;
 }
 
 .home_tag{
@@ -41,15 +36,17 @@ a{
 }
 
 .body{
+    font-family: AkayaTelivigala;
     display: flex;
-    justify-content: space-evenly;
-    font-size: 20px;
+    justify-content: space-around;
+    font-size: 25px;
     align-items: center;
-    height: 800px;
+    height: 600px;
 }
 
 .body_text{
-    width: 40%;
+    color: #fbf5d2;
+    width: 50%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
