@@ -2,17 +2,19 @@
     margin: 0px;
     padding: 0px;
     color: #FBF5D2;
-    font-family: AkayaTelivigala;
 }
 
 .text{ 
     color: #FBF5D2;
-    font-size:25px;
+    font-size:20px;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Akaya Telivigala', cursive;
 }
 
 .header{
@@ -23,13 +25,33 @@
     align-items: center;
 }
 
+
 .header_dev{
     font-family: 'Italianno', cursive;
-    font-size: 30px;
+    font-size: 50px;
     color: #FBF5D2;
 }
 .home{
-    font-family: 'AkayaTelivigala';
-    font-size:30px;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size:20px;
     color: #FBF5D2;
+}
+
+.image{
+    position: relative;
+
+    margin-top: 120px;
+}
+
+.card{
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    height: 250px;
+    width: 146.0784314px;
+    
+}
+.card:hover {
+    transform: scale(1.05);
 }
