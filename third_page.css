@@ -2,63 +2,69 @@
     margin: 0px;
     padding: 0px;
     color: #FBF5D2;
+    text-decoration: none;
 }
 
 .text{ 
     color: #FBF5D2;
-    font-size:20px;
+    font-size:25px;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 50px;
-    font-family: 'Akaya Telivigala', cursive;
+    font-family: 'AkayaTelivigala';
 }
+
 
 .header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     height: 100px;
-    align-items: center;
-}
-
-
-.header_dev{
     font-family: 'Italianno', cursive;
-    font-size: 50px;
+    font-size: 30px;
     color: #FBF5D2;
-}
-.home{
-    font-family: 'Akaya Telivigala', cursive;
-    font-size:20px;
-    color: #FBF5D2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .image{
     position: relative;
-
     margin-top: 120px;
 }
 
 .card{
     position: absolute;
-    top: -250px;
+    top: -280px;
     left: 0px;
     height: 200px;
     width: 116.8627451px;
-    
-}   
-.card {
-    transition: transform 0.3s ease;
-}
-.card:hover {
-    
-    transform: scale(1.05);
-}
-.card {
+    width: auto;
+    cursor: grab;
     cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}   
+
+.card {
+    height: 200px;
+    cursor: pointer;
+    transition: margin 0.3s ease, box-shadow 0.3s ease;
   }
   
+  .card.selected {
+    margin-top: -20px;
+    box-shadow: 0 10px 20px rgba(251, 245, 210, 0.6);
+  }
+
+
+.getInterpretationBtn {
+    display: flex;
+    margin: 20px auto;
+    font-size: 25px;
+    color: #FBF5D2;
+    font-family: "AkayaTelivigala";
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}
