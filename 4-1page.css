@@ -1,6 +1,8 @@
 *{
     margin: 0px;
     padding: 0px;
+    color: #FBF5D2;
+    text-decoration: none;
 }
 
 body{
@@ -11,7 +13,6 @@ body{
     height: 100px;
     font-family: 'Italianno', cursive;
     font-size: 30px;
-    color: #FBF5D2;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -21,7 +22,6 @@ body{
     display: flex;
     font-family: "AkayaTelivigala";
     font-size:25px;
-    color: #FBF5D2;
     height: 200px;
     justify-content: center;
     align-items: center;   
